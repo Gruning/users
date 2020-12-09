@@ -1,10 +1,10 @@
 const express = require('express')
-const ExpressGraphQL = require('express-graphql')
+const expressGraphQL = require('express-graphql')
 
 const app = express()
 
-app.use('/graphql',ExpressGraphQL({
-  graphiql: true  
+app.use('/graphql',expressGraphQL({
+  graphiql:true
 }))
 
 app.listen(4000,()=>{
